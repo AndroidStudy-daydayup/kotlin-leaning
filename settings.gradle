@@ -1,0 +1,4 @@
+include ':kotlinBasic'
+include ':callback'
+include ':app'
+rootProject.name = "KotlinStudy"
