@@ -3,6 +3,10 @@ package com.zzzl.callback.database
 import android.os.Handler
 import android.util.Log
 
+
+typealias w =  () -> Unit
+
+
 object DataBaseUtils {
 
     private val TAG = "DataBaseUtils"

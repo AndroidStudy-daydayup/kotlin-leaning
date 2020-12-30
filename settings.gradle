@@ -1,3 +1,4 @@
+include ':coroutines'
 include ':kotlinBasic'
 include ':callback'
 include ':app'
