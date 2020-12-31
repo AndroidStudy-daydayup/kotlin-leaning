@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.coroutines.*
 import java.util.concurrent.atomic.AtomicLong
 
-class CoroutinesTestActivity : AppCompatActivity() {
+class CoroutinesActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

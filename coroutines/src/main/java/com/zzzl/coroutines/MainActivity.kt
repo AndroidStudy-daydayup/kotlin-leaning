@@ -4,13 +4,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
+import kotlinx.coroutines.*
 
 class MainActivity : AppCompatActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -246,8 +242,13 @@ class MainActivity : AppCompatActivity() {
         println("Coroutine Camp ioCode5 ${Thread.currentThread().name}")
     }
 
-    fun coroutineTest(view: View) {
-        startActivity(Intent(this,CoroutinesTestActivity().javaClass))
+    fun coroutine(view: View) {
+        startActivity(Intent(this,CoroutinesActivity().javaClass))
     }
+
+    fun coroutineAction(view: View) {
+        startActivity(Intent(this,CoroutineActionActivity().javaClass))
+    }
+
 
 }
