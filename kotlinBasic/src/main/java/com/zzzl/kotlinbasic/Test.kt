@@ -3,7 +3,9 @@ package com.zzzl.kotlinbasic
 fun main() {
 //    dataClassCopy()
 
-    testRunCatching()
+//    testRunCatching()
+
+    testRunCatchingWithResult()
 }
 
 private fun dataClassCopy() {
@@ -30,4 +32,21 @@ fun testRunCatching(){
     }
     // 捕获之后这行还是会执行
     println("this is end")
+}
+
+fun testRunCatchingWithResult(){
+    println(getResult())
+}
+
+fun getResult(): Int{
+    runCatching {
+        1/0 // 报错
+//        1/1 // 不报错
+    }.onSuccess {
+        return 1
+    }.onFailure {
+        it.printStackTrace()
+        return 2
+    }
+    return 10/1
 }
