@@ -48,5 +48,6 @@ fun getResult(): Int{
         it.printStackTrace()
         return 2
     }
+    // 这句没有用，但是不写会编辑器认为你可能会没有返回值，所以还得写上。
     return 10/1
 }
