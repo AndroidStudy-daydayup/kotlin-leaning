@@ -9,3 +9,5 @@ data class Student(override var name: String, override var age: Int, var grade: 
 
 // 集成抽象类
 data class Worker(override var name: String, override var age: Int, var lengthOfService: Int): Person(name,age){}
+
+data class User(val name: String, val age: Int){}
