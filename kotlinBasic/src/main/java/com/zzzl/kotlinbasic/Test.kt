@@ -1,11 +1,14 @@
 package com.zzzl.kotlinbasic
 
+import kotlin.concurrent.thread
+
 fun main() {
 //    dataClassCopy()
 
 //    testRunCatching()
 
-    testRunCatchingWithResult()
+//    testRunCatchingWithResult()
+
 }
 
 private fun dataClassCopy() {
